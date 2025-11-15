@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
-import  datetime 
+import datetime 
 from news_rss import relevant_feeds, feeds_to_html
 
 
@@ -27,7 +27,7 @@ def send_email(text, html):
     message['To'] = ', '.join(recipients)
 
     today_date = datetime.date.today()
-    subject = f"TFG Inversión: Daily status report - {today_date}"
+    subject = f"10^6, Noticias y consejos diarios para invertir - {today_date}"
     message['Subject'] = subject
 
     
