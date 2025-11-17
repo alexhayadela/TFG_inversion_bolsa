@@ -33,12 +33,13 @@ def fetch_rss():
 
             # Append data
             feeds_data.append({"section": section, "title": title, "summary": summary, "date": date, "link": link, "tags": tags })
-            print("Section: ", section)
-            print("Title: ", title)
-            print("Summary: ", summary)
-            print("Date: ", date)
-            print("Link: ", link)
-            print("Tags: ", tags)
+            # Debug
+            # print("Section: ", section)
+            # print("Title: ", title)
+            # print("Summary: ", summary)
+            # print("Date: ", date)
+            # # print("Link: ", link)
+            # print("Tags: ", tags)
 
     df_feeds = pd.DataFrame(feeds_data)
     # Format date
