@@ -64,7 +64,7 @@ def relevant_feeds():
 
     # Drop columns we don't want to show
     df_feeds = df_feeds.drop(columns=["date", "tags", "section"])
-    print(df_feeds.columns)
+    #print(df_feeds.columns)
 
     # keep top 10 only (UPDATE LOGIC!!!)
     df_feeds = df_feeds.head(10)
