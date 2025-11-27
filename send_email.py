@@ -27,7 +27,7 @@ def send_email(text, html):
     message['To'] = ', '.join(recipients)
 
     today_date = datetime.date.today()
-    subject = f"10^6, Noticias y consejos diarios para invertir - {today_date}"
+    subject = f"10**6 Boletín {today_date}"
     message['Subject'] = subject
 
     
@@ -43,7 +43,7 @@ def send_email(text, html):
 <html>
 <head>
 <meta charset="UTF-8">
-<title>10^6, Noticias y consejos diarios para invertir</title>
+<title>10**6 Boletín</title>
 <style>
   /* Safe email styles (fallback) */
   body {{
@@ -108,7 +108,7 @@ def send_email(text, html):
 """
     end_html = f"""
     <div class="footer">
-            <p>Alex De La Haya © {datetime.date.today().year} | 10^6, Noticias y consejos diarios para invertir</p>
+            <p>Alex De La Haya © {datetime.date.today().year} | 10**6, Boletín</p>
         </div>
     </div>
 </body>
@@ -131,7 +131,7 @@ if __name__ == "__main__":
     df_feeds = relevant_feeds()
     feeds_html = feeds_to_html(df_feeds)
     
-    text = "Hello, this is a test mesage"
+    text = "Boletín diario 10**6, parte de mi trabajo de final de grado."
     send_email(text, feeds_html)
 
 
